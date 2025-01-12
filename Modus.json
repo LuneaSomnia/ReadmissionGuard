@@ -1,0 +1,26 @@
+{
+  "name": "hospital-readmission-prevention",
+  "version": "1.0.0",
+  "ai_models": {
+    "readmission_predictor": {
+      "type": "classification",
+      "provider": "openai",
+      "model": "gpt-4",
+      "endpoint": "/api/predict"
+    }
+  },
+  "data_connections": {
+    "knowledge_graph": {
+      "type": "dgraph",
+      "endpoint": "localhost:9080",
+      "credentials": {
+        "api_key": "${DGRAPH_API_KEY}"
+      }
+    }
+  },
+  "endpoints": {
+    "patient": "/api/patient",
+    "risk_assessment": "/api/risk",
+    "interventions": "/api/interventions"
+  }
+}
