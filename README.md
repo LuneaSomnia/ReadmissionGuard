@@ -1,0 +1,1 @@
+ReadmissionGuard is a sophisticated healthcare application designed to reduce hospital readmission rates by leveraging advanced AI and graph database technologies. The primary goal is to help healthcare providers identify patients at high risk of readmission and implement targeted interventions before they require rehospitalization.
